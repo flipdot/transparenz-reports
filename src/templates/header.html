@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="{{ url_for('main.index') }}">MyFlask</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                aria-controls="#navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto">
+                {% for item in navigation %}
+                    <li class="nav-item {{ 'active' if item.active else '' }}">
+                        <a class="nav-link" href="{{ url_for(item.endpoint) }}">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</nav>

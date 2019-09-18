@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyFlask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-4.3.1.min.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+
+    {% include 'favicons.html' %}
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+
+{% include 'header.html' %}
+
+<div class="container" id="mainContent">
+    {% block content %}
+    {% endblock %}
+</div>
+
+<script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap-4.3.1.bundle.min.js') }}"></script>
+
+{% block scripts %}
+{% endblock %}
+</body>
+</html>

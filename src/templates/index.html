@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col">
+            <h1>Hello world!</h1>
+            <p>You have successfully run this app. On the right, you see the output of an awesomely tested function.</p>
+        </div>
+        <div class="col-2">
+            <table class="table table-sm">
+                <thead class="thead-dark">
+                <tr class="text-center">
+                    <th>x</th>
+                    <th>f(x)</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for row in results %}
+                    <tr>
+                        <td class="text-right">{{ row.input }}</td>
+                        <td>{{ row.output }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,68 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        python-version: ['3.6', '3.7']
+        os: ['ubuntu-16.04', 'ubuntu-18.04']
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup python
+      uses: actions/setup-python@v1
+      with:
+        python-version: ${{ matrix.python-version }}
+        architecture: x64
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+    - name: Install stylechecker
+      run: pip install flake8
+    - name: Run stylecheck
+      run: flake8 .
+    - name: Run tests
+      run: GITHUB_REPOSITORY="" nosetests --with-doctest .
+  deploy:
+    needs: build
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup python
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.7'
+        architecture: x64
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+    - name: Build static version
+      run: python src/freeze.py
+    - name: Deploy to GitHub Pages
+      env:
+        # secrets.GITHUB_TOKEN is always available by default
+        # however, using it does not trigger a github pages build
+        # issue: https://github.community/t5/GitHub-Actions/Github-action-not-triggering-gh-pages-upon-push/td-p/26869
+        # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # as long as the issue is not fixed, we need a custom token which
+        # you need to enter manually
+        GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+      run: |
+        git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
+        git config --global user.name "$GITHUB_ACTOR"
+        export REMOTE=$(git config remote.origin.url)
+        git checkout --orphan gh-pages
+        rsync -a \
+          --filter='P build' \
+          --filter='P .git/' \
+          --delete-excluded \
+          build/ .
+        rm -rf build/
+        git add -A
+        git commit -m "GitHub Actions build $(date -Iseconds)"
+        git push -fq "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git" gh-pages
