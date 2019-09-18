@@ -1,5 +1,3 @@
-import os
-
 from flask import Flask, render_template, request, Blueprint
 
 from fizzbuzz import fizzbuzz
@@ -38,14 +36,8 @@ def about():
     return render_template('about.html')
 
 
-github_repository = os.getenv('GITHUB_REPOSITORY')
-if github_repository:
-    owner, sep, repo = github_repository.partition('/')
-    app = Flask(__name__, static_url_path=f'/{repo}/static')
-    app.register_blueprint(bp, url_prefix=f'/{repo}')
-else:
-    app = Flask(__name__)
-    app.register_blueprint(bp)
+app = Flask(__name__)
+app.register_blueprint(bp)
 
 if __name__ == '__main__':
     app.run()
