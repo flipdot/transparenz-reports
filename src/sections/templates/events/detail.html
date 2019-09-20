@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col">
+            <h1>Details zu „{{ event.meta.name }} – {{ event.meta.slogan }}”</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Ausgaben</h2>
+            <table class="table table-sm">
+                <thead class="thead-dark">
+                <tr class="text-center">
+                    <th>Item</th>
+                    <th>Preis</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for row in expenditures %}
+                    <tr class="{{ 'text-muted' if row.depth != 0 and (row.depth != 1 or not row.is_sum) else '' }}">
+                        {{ ('<th>' if row.is_sum else '<td>') | safe }}
+                        {% if row.depth <= 1 %}
+                            <div class="costBar" style="width: {{ row.costs / total_costs * 95 }}%"></div>
+                        {% endif %}
+                        {{ row.description }}
+                        {{ ('</th>' if row.is_sum else '</td>') | safe }}
+                        <td class="text-danger text-right">
+                            {{ '{:.2f}€'.format(row.costs) }}
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <h2>Einnahmen</h2>
+        </div>
+    </div>
+{% endblock %}

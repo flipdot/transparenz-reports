@@ -3,24 +3,12 @@
 {% block content %}
     <div class="row">
         <div class="col">
-            <h1>Kosten von flipdot Events</h1>
-
-            <table class="table table-sm">
-                <thead class="thead-dark">
-                <tr class="text-center">
-                    <th>x</th>
-                    <th>y</th>
-                </tr>
-                </thead>
-                <tbody>
-                {% for row in results %}
-                    <tr>
-                        <td class="text-right">{{ row.input }}</td>
-                        <td>{{ row.output }}</td>
-                    </tr>
+            <h1>Kostenübersicht Events</h1>
+            <ul>
+                {% for year, event_name in event_list %}
+                    <li>{{ year }} - <a href="{{ url_for('.event', year=year, event_name=event_name) }}">{{ event_name.title() }}</a></li>
                 {% endfor %}
-                </tbody>
-            </table>
+            </ul>
         </div>
     </div>
 {% endblock %}
