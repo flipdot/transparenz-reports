@@ -32,7 +32,7 @@ def index():
     return render_template('events/index.html', event_list=event_list)
 
 
-@bp.route('/<string:year>/<string:event_name>')
+@bp.route('/<string:year>/<string:event_name>/')
 def event(year, event_name):
     with open(Path('data/events') / year / f'{event_name}.yml') as f:
         event_data = yaml.safe_load(f)
