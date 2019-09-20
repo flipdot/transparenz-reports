@@ -5,23 +5,25 @@ expenditures:
   - title: Promotion
     items:
       - title: Druckkosten Flyer
-        costs: 0
+        amount: 0
       - title: Einladungen
         items:
         - title: Briefumschläge
-          costs: 3.98
+          amount: 3.98
         - title: Briefmarken
-          costs: 24
+          amount: 24
         - title: Druckkosten
-          costs: 7.80
+          amount: 7.80
   - title: 100 Platinen für Badges
-    costs: 131.95
+    amount: 131.95
   - title: Räume
     items:
       - title: Zusätzliche Miete
-        costs: 0
+        amount: 0
       - title: Zusätzlicher Energieverbrauch
-        costs: 0
+        amount: 0
   - title: Equipmentausleihe
-    costs: 0
+    amount: 0
 revenues:
+  - title: Spenden
+    amount: 0.01

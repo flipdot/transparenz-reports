@@ -1,5 +1,31 @@
 {% extends 'base.html' %}
 
+{% macro render_cost_table(entries, total_amount, text_class) %}
+    <table class="table table-sm">
+        <thead class="thead-dark">
+        <tr class="text-center">
+            <th>Item</th>
+            <th>Betrag</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for row in entries %}
+            <tr class="{{ 'text-muted' if row.depth != 0 and (row.depth != 1 or not row.is_sum) else '' }}">
+                {{ ('<th>' if row.is_sum else '<td>') | safe }}
+                {% if row.depth <= 1 %}
+                    <div class="costBar" style="width: {{ row.amount / total_amount * 95 }}%"></div>
+                {% endif %}
+                {{ row.description }}
+                {{ ('</th>' if row.is_sum else '</td>') | safe }}
+                <td class="{{ text_class }} text-right">
+                    {{ '{:.2f}€'.format(row.amount) }}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endmacro %}
+
 {% block content %}
     <div class="row">
         <div class="col">
@@ -9,32 +35,11 @@
     <div class="row">
         <div class="col-md-6">
             <h2>Ausgaben</h2>
-            <table class="table table-sm">
-                <thead class="thead-dark">
-                <tr class="text-center">
-                    <th>Item</th>
-                    <th>Preis</th>
-                </tr>
-                </thead>
-                <tbody>
-                {% for row in expenditures %}
-                    <tr class="{{ 'text-muted' if row.depth != 0 and (row.depth != 1 or not row.is_sum) else '' }}">
-                        {{ ('<th>' if row.is_sum else '<td>') | safe }}
-                        {% if row.depth <= 1 %}
-                            <div class="costBar" style="width: {{ row.costs / total_costs * 95 }}%"></div>
-                        {% endif %}
-                        {{ row.description }}
-                        {{ ('</th>' if row.is_sum else '</td>') | safe }}
-                        <td class="text-danger text-right">
-                            {{ '{:.2f}€'.format(row.costs) }}
-                        </td>
-                    </tr>
-                {% endfor %}
-                </tbody>
-            </table>
+            {{ render_cost_table(expenditures, total_expenditure, 'text-danger') }}
         </div>
         <div class="col-md-6">
             <h2>Einnahmen</h2>
+            {{ render_cost_table(revenues, total_revenue, 'text-success') }}
         </div>
     </div>
 {% endblock %}

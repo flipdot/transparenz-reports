@@ -14,13 +14,13 @@ def create_cost_table(data, title=None, depth=0) -> List[Dict[str, Union[str, fl
     for element in data:
         description = ' – '.join(filter(None, [title, element['title']]))
         if 'items' in element:
-            sub_elements = create_cost_table(element['items'], description, depth+1)
+            sub_elements = create_cost_table(element['items'], description, depth + 1)
             result += sub_elements
         else:
-            result.append({'description': description, 'costs': element['costs'], 'depth': depth})
+            result.append({'description': description, 'amount': element['amount'], 'depth': depth})
     description = ' – '.join(filter(None, [title, 'SUMME']))
-    sub_sum = sum([x['costs'] for x in result if not x.get('is_sum')])
-    result.append({'description': description, 'costs': sub_sum, 'is_sum': True, 'depth': depth})
+    sub_sum = sum([x['amount'] for x in result if not x.get('is_sum')])
+    result.append({'description': description, 'amount': sub_sum, 'is_sum': True, 'depth': depth})
     return result
 
 
@@ -38,5 +38,13 @@ def event(year, event_name):
         event_data = yaml.safe_load(f)
     pprint(event_data)
     expenditures = create_cost_table(event_data['expenditures'])
-    total_costs = sum([x['costs'] for x in expenditures if not x.get('is_sum')])
-    return render_template('events/detail.html', event=event_data, expenditures=expenditures, total_costs=total_costs)
+    revenues = create_cost_table(event_data['revenues'])
+    total_expenditure = sum([x['amount'] for x in expenditures if not x.get('is_sum')])
+    total_revenue = sum([x['amount'] for x in revenues if not x.get('is_sum')])
+    return render_template('events/detail.html',
+                           event=event_data,
+                           expenditures=expenditures,
+                           revenues=revenues,
+                           total_expenditure=total_expenditure,
+                           total_revenue=total_revenue,
+                           )
