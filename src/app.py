@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from flask import Flask, render_template, request, Blueprint
+from flask import Flask, render_template, request
 
 from sections import events
 

@@ -1,5 +1,3 @@
-import os
-import shutil
 from pathlib import Path
 
 from flask_frozen import Freezer
