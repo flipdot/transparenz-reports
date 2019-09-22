@@ -6,6 +6,7 @@ expenditures:
     items:
       - title: Druckkosten Flyer
         amount: 0
+        estimate: yes
       - title: Einladungen
         items:
         - title: Briefumschläge
@@ -18,12 +19,19 @@ expenditures:
     amount: 131.95
   - title: Räume
     items:
-      - title: Zusätzliche Miete
+      - title: Miete
         amount: 0
-      - title: Zusätzlicher Energieverbrauch
+        estimate: yes
+      - title: Energieverbrauch
         amount: 0
+        estimate: yes
   - title: Equipmentausleihe
     amount: 0
+    estimate: yes
+  - title: Serverkosten
+    amount: 3
+    estimate: yes
 revenues:
   - title: Spenden
     amount: 0.01
+    estimate: yes

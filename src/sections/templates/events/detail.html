@@ -17,8 +17,11 @@
                 {% endif %}
                 {{ row.description }}
                 {{ ('</th>' if row.is_sum else '</td>') | safe }}
-                <td class="{{ text_class }} text-right">
-                    {{ '{:.2f}€'.format(row.amount) }}
+                <td class="text-right">
+                    <span class="{{ text_class }}">{{ '{:.2f}€'.format(row.amount) }}</span>
+                    {% if row.estimate %}
+                        *
+                    {% endif %}
                 </td>
             </tr>
         {% endfor %}
@@ -40,6 +43,11 @@
         <div class="col-md-6">
             <h2>Einnahmen</h2>
             {{ render_cost_table(revenues, total_revenue, 'text-success') }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <small>* Geschätzter Betrag</small>
         </div>
     </div>
 {% endblock %}

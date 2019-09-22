@@ -17,7 +17,12 @@ def create_cost_table(data, title=None, depth=0) -> List[Dict[str, Union[str, fl
             sub_elements = create_cost_table(element['items'], description, depth + 1)
             result += sub_elements
         else:
-            result.append({'description': description, 'amount': element['amount'], 'depth': depth})
+            result.append({
+                'description': description,
+                'amount': element['amount'],
+                'depth': depth,
+                'estimate': element.get('estimate'),
+            })
     description = ' – '.join(filter(None, [title, 'SUMME']))
     sub_sum = sum([x['amount'] for x in result if not x.get('is_sum')])
     result.append({'description': description, 'amount': sub_sum, 'is_sum': True, 'depth': depth})
