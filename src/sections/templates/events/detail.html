@@ -18,10 +18,10 @@
                 {{ row.description }}
                 {{ ('</th>' if row.is_sum else '</td>') | safe }}
                 <td class="text-right">
-                    <span class="{{ text_class }}">{{ '{:.2f}€'.format(row.amount) }}</span>
                     {% if row.estimate %}
                         *
                     {% endif %}
+                    <span class="{{ text_class }}">{{ '{:.2f}€'.format(row.amount) }}</span>
                 </td>
             </tr>
         {% endfor %}
