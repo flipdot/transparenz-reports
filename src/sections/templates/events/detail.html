@@ -21,7 +21,7 @@
                     {% if row.estimate %}
                         *
                     {% endif %}
-                    <span class="{{ text_class }}">{{ '{:.2f}€'.format(row.amount) }}</span>
+                    <span class="currency {{ text_class }}">{{ '{:.2f}€'.format(row.amount) }}</span>
                 </td>
             </tr>
         {% endfor %}
