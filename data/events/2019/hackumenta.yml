@@ -31,6 +31,13 @@ expenditures:
   - title: Serverkosten
     amount: 3
     estimate: yes
+  - title: Laserwinkekatze
+    items:
+      - title: XXXL Winkekatze
+        amount: 62.49
+      - title: Elektronik
+        amount: 0
+        estimate: yes
 revenues:
   - title: Spenden
     amount: 0.01
