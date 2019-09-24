@@ -12,7 +12,7 @@ expenditures:
         - title: Briefumschläge
           amount: 3.98
         - title: Briefmarken
-          amount: 24
+          amount: 48
         - title: Druckkosten
           amount: 7.80
   - title: 100 Platinen für Badges
@@ -20,7 +20,7 @@ expenditures:
   - title: Räume
     items:
       - title: Miete
-        amount: 0
+        amount: 433.33
         estimate: yes
       - title: Energieverbrauch
         amount: 0
