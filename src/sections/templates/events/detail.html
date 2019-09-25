@@ -12,9 +12,7 @@
         {% for row in entries %}
             <tr class="{{ 'text-muted' if row.depth != 0 and (row.depth != 1 or not row.is_sum) else '' }}">
                 {{ ('<th>' if row.is_sum else '<td>') | safe }}
-                {% if row.depth <= 1 %}
-                    <div class="costBar" style="width: {{ row.amount / total_amount * 95 }}%"></div>
-                {% endif %}
+                <div class="costBar" style="width: {{ row.amount / total_amount * 95 }}%"></div>
                 {{ row.description }}
                 {{ ('</th>' if row.is_sum else '</td>') | safe }}
                 <td class="text-right">
