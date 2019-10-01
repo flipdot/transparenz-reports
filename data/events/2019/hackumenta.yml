@@ -31,6 +31,25 @@ expenditures:
   - title: Serverkosten
     amount: 3
     estimate: yes
+  - title: Getränke
+    items:
+      - title: Limetten
+        amount: 28.46
+      - title: Rum
+        amount: 161.88
+      - title: Rohrzucker
+        amount: 11.92
+      - title: Mate
+        amount: 113.91
+      - title: Bier
+        amount: 78.54
+      - title: Pfand
+        amount: 55.50
+  - title: Essen
+    items:
+      - title: Zutaten
+        amount: 150.63
+        estimate: yes
   - title: Laserwinkekatze
     items:
       - title: XXXL Winkekatze
