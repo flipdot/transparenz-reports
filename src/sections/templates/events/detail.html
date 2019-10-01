@@ -16,9 +16,9 @@
                 {{ row.description }}
                 {{ ('</th>' if row.is_sum else '</td>') | safe }}
                 <td class="text-right">
-                    {% if row.estimate %}
-                        *
-                    {% endif %}
+                    {%- if row.estimate -%}
+                        *&nbsp;
+                    {%- endif -%}
                     <span class="currency {{ text_class }}">{{ '{:.2f}'.format(row.amount) }}</span>
                 </td>
             </tr>
