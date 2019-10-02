@@ -15,8 +15,12 @@ expenditures:
           amount: 48
         - title: Druckkosten
           amount: 7.80
-  - title: 100 Platinen für Badges
-    amount: 131.95
+  - title: Badges
+    items:
+      - title: 100 Platinen
+        amount: 131.95
+      - title: 30 Mikrocontroller
+        amount: 35.47
   - title: Räume
     items:
       - title: Miete
@@ -25,6 +29,8 @@ expenditures:
       - title: Energieverbrauch
         amount: 0
         estimate: yes
+      - title: Reinigungsmittel
+        amount: 19.14
   - title: Equipmentausleihe
     amount: 0
     estimate: yes
