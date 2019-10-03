@@ -31,9 +31,13 @@ expenditures:
         estimate: yes
       - title: Reinigungsmittel
         amount: 19.14
-  - title: Equipmentausleihe
-    amount: 0
-    estimate: yes
+  - title: Equipment
+    items:
+      - title: 50 Trinkbecher
+        amount: 54.00
+      - title: Videoequipment
+        amount: 0
+        estimate: yes
   - title: Serverkosten
     amount: 3
     estimate: yes
@@ -42,20 +46,27 @@ expenditures:
       - title: Limetten
         amount: 28.46
       - title: Rum
-        amount: 161.88
+        amount: 214.34
       - title: Rohrzucker
         amount: 11.92
+      - title: Eiswürfel
+        amount: 54.77
       - title: Mate
-        amount: 113.91
+        amount: 193.87
       - title: Bier
         amount: 78.54
+      - title: Cola
+        amount: 17.97
+      - title: Wasser
+        amount: 14.47
       - title: Pfand
-        amount: 55.50
+        amount: 93.30
   - title: Essen
     items:
       - title: Zutaten
-        amount: 150.63
-        estimate: yes
+        amount: 191.57
+      - title: Zutaten Waffeln
+        amount: 61.21
   - title: Laserwinkekatze
     items:
       - title: XXXL Winkekatze
