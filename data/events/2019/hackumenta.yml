@@ -76,5 +76,14 @@ expenditures:
         estimate: yes
 revenues:
   - title: Spenden
-    amount: 0.01
-    estimate: yes
+    items:
+      - title: Tag 0
+        amount: 49
+  - title: Space Bar
+    items:
+      - title: Tag 0
+        amount: 306.96
+  - title: Küche
+    items:
+      - title: Tag 0
+        amount: 140.48
