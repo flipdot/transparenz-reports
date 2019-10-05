@@ -44,7 +44,7 @@ expenditures:
   - title: Getränke
     items:
       - title: Limetten
-        amount: 28.46
+        amount: 39.08
       - title: Rum
         amount: 214.34
       - title: Rohrzucker
@@ -56,17 +56,19 @@ expenditures:
       - title: Bier
         amount: 78.54
       - title: Cola
-        amount: 17.97
+        amount: 29.95
       - title: Wasser
         amount: 14.47
       - title: Pfand
-        amount: 93.30
+        amount: 99.90
   - title: Essen
     items:
       - title: Zutaten
         amount: 191.57
       - title: Zutaten Waffeln
         amount: 61.21
+      - title: Zutaten Pizza
+        amount: 75.07
   - title: Laserwinkekatze
     items:
       - title: XXXL Winkekatze
