@@ -44,11 +44,13 @@ expenditures:
   - title: Getränke
     items:
       - title: Limetten
-        amount: 39.08
+        amount: 64.13
       - title: Rum
         amount: 214.34
       - title: Rohrzucker
-        amount: 11.92
+        amount: 17.88
+      - title: Kokosblueten
+        amount: 2.49
       - title: Eiswürfel
         amount: 54.77
       - title: Mate
@@ -68,7 +70,7 @@ expenditures:
       - title: Zutaten Waffeln
         amount: 61.21
       - title: Zutaten Pizza
-        amount: 74.67
+        amount: 81.83
   - title: Laserwinkekatze
     items:
       - title: XXXL Winkekatze
