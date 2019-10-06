@@ -85,15 +85,21 @@ revenues:
         amount: 49
       - title: Tag 1
         amount: 0.50
+      - title: Tag 2
+        amount: 11.56
   - title: Space Bar
     items:
       - title: Tag 0
         amount: 306.96
       - title: Tag 1
         amount: 611.15
+      - title: Tag 2
+        amount: 447.93
   - title: Küche
     items:
       - title: Tag 0
         amount: 140.48
       - title: Tag 1
         amount: 153.22
+      - title: Tag 2
+        amount: 153.90
