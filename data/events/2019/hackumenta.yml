@@ -103,3 +103,5 @@ revenues:
         amount: 153.22
       - title: Tag 2
         amount: 153.90
+  - title: Badge
+    amount: 46.20
