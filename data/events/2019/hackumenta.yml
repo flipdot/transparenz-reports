@@ -38,6 +38,10 @@ expenditures:
       - title: Videoequipment
         amount: 0
         estimate: yes
+      - title: Partybeleuchtung
+        amount: 55.73
+      - title: Holz
+        amount: 132.57
   - title: Serverkosten
     amount: 3
     estimate: yes
@@ -70,7 +74,7 @@ expenditures:
       - title: Zutaten Waffeln
         amount: 61.21
       - title: Zutaten Pizza
-        amount: 81.83
+        amount: 95.80  # Mehl typ_o fuer 7,50EUR bereits enthalten, Eigenbeleg ging zurueck aufgrund von Form
   - title: Laserwinkekatze
     items:
       - title: XXXL Winkekatze
