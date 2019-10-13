@@ -39,7 +39,7 @@ expenditures:
         amount: 0
         estimate: yes
       - title: Partybeleuchtung
-        amount: 55.73
+        amount: 48.57
       - title: Holz
         amount: 132.57
   - title: Serverkosten
@@ -79,9 +79,8 @@ expenditures:
     items:
       - title: XXXL Winkekatze
         amount: 62.49
-      - title: Elektronik
-        amount: 0
-        estimate: yes
+      - title: Laser
+        amount: 7.16
 revenues:
   - title: Spenden
     items:
