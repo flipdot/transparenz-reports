@@ -98,6 +98,8 @@ revenues:
         amount: 611.15
       - title: Tag 2
         amount: 447.93
+      - title: Nachträglich eingegangen
+        amount: 24.20
   - title: Küche
     items:
       - title: Tag 0
