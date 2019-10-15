@@ -48,7 +48,7 @@ expenditures:
   - title: Getränke
     items:
       - title: Limetten
-        amount: 64.13
+        amount: 76.25
       - title: Rum
         amount: 214.34
       - title: Rohrzucker
@@ -67,6 +67,10 @@ expenditures:
         amount: 14.47
       - title: Pfand
         amount: 99.90
+      - title: Trinkhalme
+        amount: 7.92
+      - title: HAPPY DAY ANANAS
+        amount: 3.78
   - title: Essen
     items:
       - title: Zutaten
