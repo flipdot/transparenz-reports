@@ -74,11 +74,13 @@ expenditures:
   - title: Essen
     items:
       - title: Zutaten
-        amount: 191.57
+        amount: 196.94
       - title: Zutaten Waffeln
         amount: 61.21
       - title: Zutaten Pizza
         amount: 95.80  # Mehl typ_o fuer 7,50EUR bereits enthalten, Eigenbeleg ging zurueck aufgrund von Form
+  - title: Internet (extra LTE Vertrag)
+    amount: 39.95
   - title: Laserwinkekatze
     items:
       - title: XXXL Winkekatze
