@@ -81,10 +81,12 @@ expenditures:
         amount: 95.80  # Mehl typ_o fuer 7,50EUR bereits enthalten, Eigenbeleg ging zurueck aufgrund von Form
   - title: Internet (extra LTE Vertrag)
     amount: 39.95
-  - title: Laserwinkekatze
+  - title: Laserwinkekatzen
     items:
       - title: XXXL Winkekatze
         amount: 62.49
+      - title: 2x kleine Winkekatze
+        amount: 19.80
       - title: Laser
         amount: 7.16
 revenues:
