@@ -23,8 +23,10 @@ expenditures:
         amount: 35.47
   - title: Räume
     items:
-      - title: Miete
+      - title: Miete Unten
         amount: 433.33
+      - title: Miete Interim
+        amount: 200
         estimate: yes
       - title: Energieverbrauch
         amount: 0
