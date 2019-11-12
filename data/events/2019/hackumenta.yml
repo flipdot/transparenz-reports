@@ -45,8 +45,7 @@ expenditures:
       - title: Holz
         amount: 132.57
   - title: Serverkosten
-    amount: 3
-    estimate: yes
+    amount: 4.22
   - title: Getränke
     items:
       - title: Limetten
