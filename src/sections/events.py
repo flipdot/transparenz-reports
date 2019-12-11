@@ -1,5 +1,4 @@
 import re
-from pprint import pprint
 from typing import List, Dict, Union
 
 from flask import Blueprint, render_template
@@ -41,7 +40,6 @@ def index():
 def event(year, event_name):
     with open(Path('data/events') / year / f'{event_name}.yml') as f:
         event_data = yaml.safe_load(f)
-    pprint(event_data)
     expenditures = create_cost_table(event_data['expenditures'])
     revenues = create_cost_table(event_data['revenues'])
     total_expenditure = sum([x['amount'] for x in expenditures if not x.get('is_sum')])
