@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col">
+            <h1>Kostenübersicht Projekte</h1>
+            {% for year, projects in data.items() %}
+                <h2>{{ year }}</h2>
+                <table class="table table-sm">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th class="text-center">Projekt</th>
+                        <th class="text-right">Kosten [€]</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for project in projects %}
+                        <tr>
+                            <td>{{ project.name }}</td>
+                            <td class="text-right"><span class="currency">{{ '{:.2f}'.format(project.costs) }}</span></td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
