@@ -11,6 +11,8 @@
                     <tr>
                         <th class="text-center">Projekt</th>
                         <th class="text-right">Kosten [€]</th>
+                        <th class="text-right">Budget [€]</th>
+                        <th class="text-right">Verfügbar [€]</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -18,6 +20,8 @@
                         <tr>
                             <td>{{ project.name }}</td>
                             <td class="text-right"><span class="currency">{{ '{:.2f}'.format(project.costs) }}</span></td>
+                            <td class="text-right"><span class="currency">{{ '{:.2f}'.format(project.budget) }}</span></td>
+                            <td class="text-right"><span class="currency">{{ '{:.2f}'.format(project.budget - project.costs) }}</span></td>
                         </tr>
                     {% endfor %}
                     </tbody>
