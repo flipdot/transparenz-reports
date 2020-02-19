@@ -19,9 +19,9 @@
                     {% for project in projects %}
                         <tr>
                             <td>{{ project.name }}</td>
-                            <td class="text-right"><span class="currency">{{ '{:.2f}'.format(project.costs) }}</span></td>
+                            <td class="text-right"><span class="currency">{{ '{:.2f}'.format(project.total_costs) }}</span></td>
                             <td class="text-right"><span class="currency">{{ '{:.2f}'.format(project.budget) }}</span></td>
-                            <td class="text-right"><span class="currency">{{ '{:.2f}'.format(project.budget - project.costs) }}</span></td>
+                            <td class="text-right"><span class="currency">{{ '{:.2f}'.format(project.budget - project.total_costs) }}</span></td>
                         </tr>
                     {% endfor %}
                     </tbody>

@@ -1,4 +1,37 @@
 2019:
   - name: Lichtinstallation für den „Nuspace“
-    costs: 213.92
+    costs:
+      - name: Ikea TRADFRI LED1 E27 250
+        price: 9.99
+        article_id: 70455676
+        purchase_date: 2019-12-07
+      - name: Ikea TRADFRI N1 LED1 E27
+        price: 8
+        article_id: 90408797
+        purchase_date: 2019-12-07
+      - name: Ikea TRADFRI N1 LEDL E27
+        price: 14.99
+        quantity: 2
+        article_id: 60408483
+        purchase_date: 2019-12-07
+      - name: Ikea TRADFRI N1 LED1 E27
+        price: 14.99
+        article_id: 30408470
+        purchase_date: 2019-12-07
+      - name: CC Debugger Texas Instruments + Adapterkabel + CC2531 ZigBee USB-Sick komplett Set
+        price: 42
+        purchase_date: 2020-01-12
+      - name: Ikea TRADFRI N Set+Dimm
+        price: 10
+        quantity: 7
+        purchase_date: 2020-02-14
+      - name: Ikea TRADFRI N1 LEDL GU10
+        article_id: 60420041
+        price: 7.99
+        quantity: 3
+        purchase_date: 2020-02-14
+      - name: Ikea TRADFRI N1 LEDL GU10
+        article_id: 90408603
+        price: 14.99
+        purchase_date: 2020-02-14
     budget: 1550.00
