@@ -17,10 +17,10 @@ jobs:
       with:
         python-version: '3.7'
         architecture: x64
+    - name: Install pipenv
+      run: pip install pipenv
     - name: Install dependencies
-      run: pip install -r requirements.txt
-    - name: Install stylechecker
-      run: pip install flake8
+      run: pipenv sync
     - name: Run stylecheck
       run: flake8 .
     - name: Run tests
@@ -36,10 +36,12 @@ jobs:
       with:
         python-version: '3.7'
         architecture: x64
+    - name: Install pipenv
+      run: pip install pipenv
     - name: Install dependencies
-      run: pip install -r requirements.txt
+      run: pipenv sync
     - name: Build static version
-      run: python src/freeze.py
+      run: pipenv run python src/freeze.py
     - name: Deploy to GitHub Pages
       env:
         # secrets.GITHUB_TOKEN is always available by default
