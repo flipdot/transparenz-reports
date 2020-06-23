@@ -2,11 +2,12 @@ from datetime import datetime
 
 from flask import Flask, render_template, request
 
-from sections import events, projects
+from sections import events, projects, running_expenses
 
 blueprints = [
     events.bp,
     projects.bp,
+    running_expenses.bp,
 ]
 
 app = Flask(__name__)
