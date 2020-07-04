@@ -41,7 +41,7 @@ jobs:
     - name: Install dependencies
       run: pipenv sync
     - name: Build static version
-      run: pipenv run python src/freeze.py
+      run: pipenv run src/freeze.py
     - name: Deploy to GitHub Pages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -56,6 +56,5 @@ def get_costs_hcloud():
                 abort(500, 'Some date_to are not equal')
             p['x'].append(group['date_to'].any())
             p['y'].append(group['price_gross'].sum())
-            print(p['y'])
 
     return list(projects.values())
