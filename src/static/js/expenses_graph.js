@@ -7,7 +7,8 @@ let layout = {
         type: 'date'
     },
     yaxis: {
-        ticksuffix: '€'
+        ticksuffix: '€',
+        tickformat: '.2f'
     }
 };
 

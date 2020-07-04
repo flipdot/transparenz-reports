@@ -51,10 +51,11 @@ def get_costs_hcloud():
             if name not in projects:
                 projects[name] = {'x': [], 'y': [], 'type': 'scatter', 'name': name, 'stackgroup': 'one'}
             p = projects[name]
-            group = group.sort_values('day_to')
-            if not (group['day_to'].any() == group['day_to']).all():
-                abort(500, 'Some day_to are not equal')
-            p['x'].append(group['day_to'].any())
-            p['y'].append(group['price_netto'].sum() * 1.19)
+            group = group.sort_values('date_to')
+            if not (group['date_to'].any() == group['date_to']).all():
+                abort(500, 'Some date_to are not equal')
+            p['x'].append(group['date_to'].any())
+            p['y'].append(group['price_gross'].sum())
+            print(p['y'])
 
     return list(projects.values())
