@@ -17,6 +17,7 @@ MarkupSafe = "==1.1.1"
 Werkzeug = "==0.15.4"
 PyYAML = "==5.1.2"
 flake8 = "*"
+pandas = "*"
 
 [requires]
 python_version = "3.7"

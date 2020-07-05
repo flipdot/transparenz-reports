@@ -1,0 +1,37 @@
+server_id,name,project,type,quantity,usage_hours,price,price_max,price_net,price_gross,vat,date_from,date_to,is_backup,is_server,is_ceph
+907650,gw-17.ffks.de,FFKS,cx31,1.0,720,8.9,8.9,8.9,10.591,0.19,2020-04-01,2020-04-30,False,True,False
+907649,gw-01.ffks.de,FFKS,cx31,1.0,720,8.9,8.9,8.9,10.591,0.19,2020-04-01,2020-04-30,False,True,False
+5598589,flipdot-mail,flipdot Vorstand,cx11,74.0,74,0.004,2.49,0.296,0.35223999999999994,0.19,2020-04-01,2020-04-30,False,True,False
+5207963,volume-mail-not-working,flipdot Vorstand,storage,0.055555555599999994,,0.04,,0.002222222224,0.0026444444465599996,0.19,2020-04-01,2020-04-30,False,False,False
+2014216,flipdot-datenschutz-1,flipdot Vorstand,cx21,1.0,720,4.9,4.9,4.9,5.831,0.19,2020-04-01,2020-04-30,False,True,True
+2014216,flipdot-datenschutz-1,flipdot Vorstand,backup,1.0,,0.98,,0.98,1.1662,0.19,2020-04-01,2020-04-30,True,False,False
+5597498,flipdot-mail-not-working,flipdot Vorstand,cx11,2.0,2,0.004,2.49,0.008,0.009519999999999999,0.19,2020-04-01,2020-04-30,False,True,False
+5597498,flipdot-mail-not-working,flipdot Vorstand,backup,1.0,,0.0016,,0.0016,0.001904,0.19,2020-04-01,2020-04-30,True,False,False
+5209091,volume-mail,flipdot Vorstand,storage,2.0555555556,,0.04,,0.082222222224,0.09784444444655999,0.19,2020-04-01,2020-04-30,False,False,False
+3747984,ansible-managed-01,flipdot Member,cx11,1.0,720,2.49,2.49,2.49,2.9631000000000003,0.19,2020-04-01,2020-04-30,False,True,False
+14218652,pretalx-hackumenta-2020-1584996870,flipdot Member,unknown,0.0961865829,,0.01,,0.000961865829,0.0011446203365099998,0.19,2020-04-01,2020-04-30,False,False,False
+5225621,snapshot-14218652-ubuntu-2gb-fsn1-1,flipdot Member,cx11,1.0,1,0.004,2.49,0.004,0.0047599999999999995,0.19,2020-04-01,2020-04-30,False,True,False
+2752879,flipdot-minecraft,flipdot Minecraft,cx21,1.0,720,4.9,4.9,4.9,5.831,0.19,2020-04-01,2020-04-30,False,True,False
+5522144,swarm-manager2,flipdot.dev,cx11,2.0,2,0.004,2.49,0.008,0.009519999999999999,0.19,2020-04-01,2020-04-30,False,True,False
+5520634,swarm-manager1,flipdot.dev,cx11,4.0,4,0.004,2.49,0.016,0.019039999999999998,0.19,2020-04-01,2020-04-30,False,True,False
+5522398,swarm-manager3,flipdot.dev,cx11,1.0,1,0.004,2.49,0.004,0.0047599999999999995,0.19,2020-04-01,2020-04-30,False,True,False
+5401051,swarm-manager1,flipdot.dev,cx11,9.0,9,0.004,2.49,0.036000000000000004,0.04284,0.19,2020-04-01,2020-04-30,False,True,False
+5405812,test2,flipdot.dev,cx11,2.0,2,0.004,2.49,0.008,0.009519999999999999,0.19,2020-04-01,2020-04-30,False,True,False
+5403714,clearlinux,flipdot.dev,cx11,2.0,2,0.004,2.49,0.008,0.009519999999999999,0.19,2020-04-01,2020-04-30,False,True,False
+5356272,swarm-manager1,flipdot.dev,cx11,30.0,30,0.004,2.49,0.12,0.14279999999999998,0.19,2020-04-01,2020-04-30,False,True,False
+5346798,swarm-manager1,flipdot.dev,cx11,18.0,18,0.004,2.49,0.07200000000000001,0.08568,0.19,2020-04-01,2020-04-30,False,True,False
+5346763,swarm-manager1,flipdot.dev,cx11,1.0,1,0.004,2.49,0.004,0.0047599999999999995,0.19,2020-04-01,2020-04-30,False,True,False
+5346639,swarm-manager1,flipdot.dev,cx11,1.0,1,0.004,2.49,0.004,0.0047599999999999995,0.19,2020-04-01,2020-04-30,False,True,False
+5345790,swarm-manager1,flipdot.dev,cx11,2.0,2,0.004,2.49,0.008,0.009519999999999999,0.19,2020-04-01,2020-04-30,False,True,False
+5333583,swarm-manager1,flipdot.dev,cx11,3.0,3,0.004,2.49,0.012,0.01428,0.19,2020-04-01,2020-04-30,False,True,False
+5334574,swarm-manager2,flipdot.dev,cx11,1.0,1,0.004,2.49,0.004,0.0047599999999999995,0.19,2020-04-01,2020-04-30,False,True,False
+5333502,swarm-manager1,flipdot.dev,cx11,1.0,1,0.004,2.49,0.004,0.0047599999999999995,0.19,2020-04-01,2020-04-30,False,True,False
+5333493,swarm-manager1,flipdot.dev,cx11,1.0,1,0.004,2.49,0.004,0.0047599999999999995,0.19,2020-04-01,2020-04-30,False,True,False
+5333465,swarm-manager1,flipdot.dev,cx11,1.0,1,0.004,2.49,0.004,0.0047599999999999995,0.19,2020-04-01,2020-04-30,False,True,False
+5333450,swarm-manager1,flipdot.dev,cx11,1.0,1,0.004,2.49,0.004,0.0047599999999999995,0.19,2020-04-01,2020-04-30,False,True,False
+5333122,swarm-manager1,flipdot.dev,cx11,1.0,1,0.004,2.49,0.004,0.0047599999999999995,0.19,2020-04-01,2020-04-30,False,True,False
+5333058,swarm-manager1,flipdot.dev,cx11,1.0,1,0.004,2.49,0.004,0.0047599999999999995,0.19,2020-04-01,2020-04-30,False,True,False
+5332822,swarm-manager01,flipdot.dev,cx11,1.0,1,0.004,2.49,0.004,0.0047599999999999995,0.19,2020-04-01,2020-04-30,False,True,False
+5227452,swarm-manager1,flipdot.dev,cx11,162.0,162,0.004,2.49,0.648,0.77112,0.19,2020-04-01,2020-04-30,False,True,False
+5227061,traefiktest,flipdot.dev,cx11,2.0,2,0.004,2.49,0.008,0.009519999999999999,0.19,2020-04-01,2020-04-30,False,True,False
+5226170,traefiktest,flipdot.dev,cx11,3.0,3,0.004,2.49,0.012,0.01428,0.19,2020-04-01,2020-04-30,False,True,False

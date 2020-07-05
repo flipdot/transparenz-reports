@@ -1,0 +1,48 @@
+server_id,name,project,type,quantity,usage_hours,price,price_max,price_net,price_gross,vat,date_from,date_to,is_backup,is_server,is_ceph
+907649,gw-01.ffks.de,FFKS,cx31,1.0,744,8.9,8.9,8.9,10.591,0.19,2020-05-01,2020-05-31,False,True,False
+907650,gw-17.ffks.de,FFKS,cx31,1.0,744,8.9,8.9,8.9,10.591,0.19,2020-05-01,2020-05-31,False,True,False
+2014216,flipdot-datenschutz-1,flipdot Vorstand,cx21,1.0,744,4.9,4.9,4.9,5.831,0.19,2020-05-01,2020-05-31,False,True,True
+2014216,flipdot-datenschutz-1,flipdot Vorstand,backup,1.0,,0.98,,0.98,1.1662,0.19,2020-05-01,2020-05-31,True,False,False
+5209091,volume-mail,flipdot Vorstand,storage,19.2741935484,,0.04,,0.770967741936,0.91745161290384,0.19,2020-05-01,2020-05-31,False,False,False
+5598589,flipdot-mail,flipdot Vorstand,cx11,1.0,717,2.49,2.49,2.49,2.9631000000000003,0.19,2020-05-01,2020-05-31,False,True,False
+3747984,ansible-managed-01,flipdot Member,cx11,1.0,744,2.49,2.49,2.49,2.9631000000000003,0.19,2020-05-01,2020-05-31,False,True,False
+5969718,minecraft-gen2,flipdot Minecraft,cx21,195.0,195,0.008,4.9,1.56,1.8564,0.19,2020-05-01,2020-05-31,False,True,False
+2752879,flipdot-minecraft,flipdot Minecraft,cx21,552.0,552,0.008,4.9,4.416,5.25504,0.19,2020-05-01,2020-05-31,False,True,False
+6069039,,flipdot.dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-05-01,2020-05-31,False,True,False
+6068115,,flipdot.dev,cx21,3.0,3,0.008,4.9,0.024,0.02856,0.19,2020-05-01,2020-05-31,False,True,False
+6068633,scalelite,flipdot.dev,cpx11,2.0,2,0.006,3.49,0.012,0.01428,0.19,2020-05-01,2020-05-31,False,True,False
+6067856,bbbinstallshtest,flipdot.dev,cpx31,3.0,3,0.02,12.4,0.06,0.07139999999999999,0.19,2020-05-01,2020-05-31,False,True,False
+6067856,bbbinstallshtest,flipdot.dev,cx21,2.0,2,0.008,4.9,0.016,0.019039999999999998,0.19,2020-05-01,2020-05-31,False,True,False
+6015833,testtestmailserver,flipdot.dev,cx21,71.0,71,0.008,4.9,0.5680000000000001,0.6759200000000001,0.19,2020-05-01,2020-05-31,False,True,False
+6015833,testtestmailserver,flipdot.dev,backup,1.0,,0.1136,,0.1136,0.135184,0.19,2020-05-01,2020-05-31,True,False,False
+6015670,testtestmailserver,flipdot.dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-05-01,2020-05-31,False,True,False
+6015434,testtestmailserver,flipdot.dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-05-01,2020-05-31,False,True,False
+6015434,testtestmailserver,flipdot.dev,backup,1.0,,0.0016,,0.0016,0.001904,0.19,2020-05-01,2020-05-31,True,False,False
+6015417,testtestmailserver,flipdot.dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-05-01,2020-05-31,False,True,False
+6015408,testtestmailserver,flipdot.dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-05-01,2020-05-31,False,True,False
+6015401,testtestmailserver,flipdot.dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-05-01,2020-05-31,False,True,False
+6015303,testtestmailserver,flipdot.dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-05-01,2020-05-31,False,True,False
+6015299,testtestmailserver,flipdot.dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-05-01,2020-05-31,False,True,False
+6015286,testtestmailserver,flipdot.dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-05-01,2020-05-31,False,True,False
+5967525,testmailserver,flipdot.dev,cx21,202.0,202,0.008,4.9,1.616,1.92304,0.19,2020-05-01,2020-05-31,False,True,False
+5967525,testmailserver,flipdot.dev,backup,1.0,,0.3232,,0.3232,0.38460799999999995,0.19,2020-05-01,2020-05-31,True,False,False
+5534574,volume-hel1-1,flipdot.dev,storage,0.0134408602,,0.04,,0.000537634408,0.00063978494552,0.19,2020-05-01,2020-05-31,False,False,False
+5943448,ubuntu-2gb-hel1-1,flipdot.dev,cx11,1.0,1,0.004,2.49,0.004,0.0047599999999999995,0.19,2020-05-01,2020-05-31,False,True,False
+5876441,testmailserver,flipdot.dev,cx21,107.0,107,0.008,4.9,0.856,1.01864,0.19,2020-05-01,2020-05-31,False,True,False
+5876441,testmailserver,flipdot.dev,backup,1.0,,0.1712,,0.1712,0.203728,0.19,2020-05-01,2020-05-31,True,False,False
+5876324,testmailserver,flipdot.dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-05-01,2020-05-31,False,True,False
+5841381,testmailserver,flipdot.dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-05-01,2020-05-31,False,True,False
+5841336,testmailserver,flipdot.dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-05-01,2020-05-31,False,True,False
+5841257,testmailserver,flipdot.dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-05-01,2020-05-31,False,True,False
+5841257,testmailserver,flipdot.dev,backup,1.0,,0.0016,,0.0016,0.001904,0.19,2020-05-01,2020-05-31,True,False,False
+5840803,testmailserver,flipdot.dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-05-01,2020-05-31,False,True,False
+5840803,testmailserver,flipdot.dev,backup,1.0,,0.0016,,0.0016,0.001904,0.19,2020-05-01,2020-05-31,True,False,False
+5840780,testmailserver,flipdot.dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-05-01,2020-05-31,False,True,False
+5840730,testmailserver,flipdot.dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-05-01,2020-05-31,False,True,False
+5840288,testmailserver,flipdot.dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-05-01,2020-05-31,False,True,False
+5840288,testmailserver,flipdot.dev,backup,1.0,,0.0016,,0.0016,0.001904,0.19,2020-05-01,2020-05-31,True,False,False
+5840230,ubuntu-2gb-nbg1-1,flipdot.dev,cx11,1.0,1,0.004,2.49,0.004,0.0047599999999999995,0.19,2020-05-01,2020-05-31,False,True,False
+5808043,testmailserver,flipdot.dev,cx21,48.0,48,0.008,4.9,0.384,0.45696,0.19,2020-05-01,2020-05-31,False,True,False
+5808043,testmailserver,flipdot.dev,backup,1.0,,0.0768,,0.0768,0.09139199999999999,0.19,2020-05-01,2020-05-31,True,False,False
+5807992,swarm-manager1,flipdot.dev,cx11,1.0,1,0.004,2.49,0.004,0.0047599999999999995,0.19,2020-05-01,2020-05-31,False,True,False
+5673500,swarm-manager1,flipdot.dev,cx11,219.0,219,0.004,2.49,0.876,1.04244,0.19,2020-05-01,2020-05-31,False,True,False

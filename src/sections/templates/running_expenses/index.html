@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col">
+            <h1>Laufende Kosten</h1>
+            <ul class="nav nav-tabs" id="graph-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ url_for('running_expenses.category_data', category='total') }}">Gesamt</a>
+                </li>
+                {% for k, v in categories.items() %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('running_expenses.category_data', category=k) }}">{{ v }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+            <div id="expensesGraph"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='js/plotly-latest.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/expenses_graph.js') }}"></script>
+{% endblock %}
