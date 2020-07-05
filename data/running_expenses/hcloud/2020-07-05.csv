@@ -1,0 +1,71 @@
+server_id,name,project,type,quantity,usage_hours,price,price_max,price_net,price_gross,vat,date_from,date_to,is_backup,is_server,is_ceph
+907650,gw-17.ffks.de,FFKS,cx31,1.0,720,8.9,8.9,8.9,10.591,0.19,2020-06-01,2020-06-30,False,True,False
+907649,gw-01.ffks.de,FFKS,cx31,1.0,720,8.9,8.9,8.9,10.591,0.19,2020-06-01,2020-06-30,False,True,False
+2014216,flipdot-datenschutz-1,flipdot Vorstand,cx21,1.0,720,4.9,4.9,4.9,5.831,0.19,2020-06-01,2020-06-30,False,True,True
+2014216,flipdot-datenschutz-1,flipdot Vorstand,backup,1.0,,0.98,,0.98,1.1662,0.19,2020-06-01,2020-06-30,True,False,False
+3747984,ansible-managed-01,flipdot Member,cx11,1.0,720,2.49,2.49,2.49,2.9631000000000003,0.19,2020-06-01,2020-06-30,False,True,False
+5969718,minecraft-gen2,flipdot Minecraft,cx21,1.0,720,4.9,4.9,4.9,5.831,0.19,2020-06-01,2020-06-30,False,True,False
+6452316,nginx,flipdot Dev,cx11,52.0,52,0.004,2.49,0.20800000000000002,0.24752000000000002,0.19,2020-06-01,2020-06-30,False,True,False
+5967525,testmailserver,flipdot Dev,cx21,1.0,720,4.9,4.9,4.9,5.831,0.19,2020-06-01,2020-06-30,False,True,False
+5967525,testmailserver,flipdot Dev,backup,1.0,,0.98,,0.98,1.1662,0.19,2020-06-01,2020-06-30,True,False,False
+6281719,bbb3.flipdot Dev,flipdot Dev,cx21,95.0,95,0.008,4.9,0.76,0.9044,0.19,2020-06-01,2020-06-30,False,True,False
+6282569,scalelite1.flipdot Dev,flipdot Dev,cpx11,92.0,92,0.006,3.49,0.552,0.65688,0.19,2020-06-01,2020-06-30,False,True,False
+6281718,bbb2.flipdot Dev,flipdot Dev,cx21,95.0,95,0.008,4.9,0.76,0.9044,0.19,2020-06-01,2020-06-30,False,True,False
+6281717,bbb1.flipdot Dev,flipdot Dev,cx21,95.0,95,0.008,4.9,0.76,0.9044,0.19,2020-06-01,2020-06-30,False,True,False
+6281837,scalelite1.flipdot Dev,flipdot Dev,cpx11,2.0,2,0.006,3.49,0.012,0.01428,0.19,2020-06-01,2020-06-30,False,True,False
+6282328,scalelite1.flipdot Dev,flipdot Dev,cpx11,1.0,1,0.006,3.49,0.006,0.00714,0.19,2020-06-01,2020-06-30,False,True,False
+6281774,scalelite1.flipdot Dev,flipdot Dev,cpx11,1.0,1,0.006,3.49,0.006,0.00714,0.19,2020-06-01,2020-06-30,False,True,False
+6223860,scalelite1.flipdot Dev,flipdot Dev,cpx11,107.0,107,0.006,3.49,0.642,0.76398,0.19,2020-06-01,2020-06-30,False,True,False
+6213415,bbb3.flipdot Dev,flipdot Dev,cx21,119.0,119,0.008,4.9,0.9520000000000001,1.13288,0.19,2020-06-01,2020-06-30,False,True,False
+6213414,bbb2.flipdot Dev,flipdot Dev,cx21,119.0,119,0.008,4.9,0.9520000000000001,1.13288,0.19,2020-06-01,2020-06-30,False,True,False
+6213413,bbb1.flipdot Dev,flipdot Dev,cx21,119.0,119,0.008,4.9,0.9520000000000001,1.13288,0.19,2020-06-01,2020-06-30,False,True,False
+6223376,scalelite1.flipdot Dev,flipdot Dev,cpx11,1.0,1,0.006,3.49,0.006,0.00714,0.19,2020-06-01,2020-06-30,False,True,False
+6213692,scalelite.flipdot Dev,flipdot Dev,cpx11,12.0,12,0.006,3.49,0.07200000000000001,0.08568,0.19,2020-06-01,2020-06-30,False,True,False
+6213645,scalelite.flipdot Dev,flipdot Dev,cpx11,1.0,1,0.006,3.49,0.006,0.00714,0.19,2020-06-01,2020-06-30,False,True,False
+6160933,bbb3.flipdot Dev,flipdot Dev,cx21,8.0,8,0.008,4.9,0.064,0.07615999999999999,0.19,2020-06-01,2020-06-30,False,True,False
+6160928,bbb1.flipdot Dev,flipdot Dev,cx21,8.0,8,0.008,4.9,0.064,0.07615999999999999,0.19,2020-06-01,2020-06-30,False,True,False
+6067856,bbbinstallshtest,flipdot Dev,cpx31,165.0,165,0.02,12.4,3.3000000000000003,3.927,0.19,2020-06-01,2020-06-30,False,True,False
+17544309,bbbinstallshtest-1591563235,flipdot Dev,unknown,2.5888285083,,0.01,,0.025888285083000003,0.030807059248770002,0.19,2020-06-01,2020-06-30,False,False,False
+6166058,scalelite-molecule,flipdot Dev,cpx11,1.0,1,0.006,3.49,0.006,0.00714,0.19,2020-06-01,2020-06-30,False,True,False
+6161877,scalelite.flipdot Dev,flipdot Dev,cpx11,7.0,7,0.006,3.49,0.042,0.049980000000000004,0.19,2020-06-01,2020-06-30,False,True,False
+6160931,bbb2.flipdot Dev,flipdot Dev,cx21,8.0,8,0.008,4.9,0.064,0.07615999999999999,0.19,2020-06-01,2020-06-30,False,True,False
+6154721,scalelite-molecule,flipdot Dev,cpx11,22.0,22,0.006,3.49,0.132,0.15708,0.19,2020-06-01,2020-06-30,False,True,False
+6161522,scalelite.flipdot Dev,flipdot Dev,cpx11,1.0,1,0.006,3.49,0.006,0.00714,0.19,2020-06-01,2020-06-30,False,True,False
+6161298,,flipdot Dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-06-01,2020-06-30,False,True,False
+6155729,bigbluebutton3,flipdot Dev,cx21,13.0,13,0.008,4.9,0.10400000000000001,0.12376000000000001,0.19,2020-06-01,2020-06-30,False,True,False
+6155727,bigbluebutton2,flipdot Dev,cx21,13.0,13,0.008,4.9,0.10400000000000001,0.12376000000000001,0.19,2020-06-01,2020-06-30,False,True,False
+6155725,bigbluebutton1,flipdot Dev,cx21,13.0,13,0.008,4.9,0.10400000000000001,0.12376000000000001,0.19,2020-06-01,2020-06-30,False,True,False
+6155581,bigbluebutton3,flipdot Dev,cpx11,1.0,1,0.006,3.49,0.006,0.00714,0.19,2020-06-01,2020-06-30,False,True,False
+6155576,bigbluebutton2,flipdot Dev,cpx11,1.0,1,0.006,3.49,0.006,0.00714,0.19,2020-06-01,2020-06-30,False,True,False
+6155575,bigbluebutton1,flipdot Dev,cpx11,1.0,1,0.006,3.49,0.006,0.00714,0.19,2020-06-01,2020-06-30,False,True,False
+6155441,bigbluebutton3,flipdot Dev,cpx11,1.0,1,0.006,3.49,0.006,0.00714,0.19,2020-06-01,2020-06-30,False,True,False
+6155432,bigbluebutton2,flipdot Dev,cpx11,1.0,1,0.006,3.49,0.006,0.00714,0.19,2020-06-01,2020-06-30,False,True,False
+6155431,bigbluebutton1,flipdot Dev,cpx11,1.0,1,0.006,3.49,0.006,0.00714,0.19,2020-06-01,2020-06-30,False,True,False
+6155416,4,flipdot Dev,cpx11,1.0,1,0.006,3.49,0.006,0.00714,0.19,2020-06-01,2020-06-30,False,True,False
+6155415,3,flipdot Dev,cpx11,1.0,1,0.006,3.49,0.006,0.00714,0.19,2020-06-01,2020-06-30,False,True,False
+6155414,2,flipdot Dev,cpx11,1.0,1,0.006,3.49,0.006,0.00714,0.19,2020-06-01,2020-06-30,False,True,False
+6155413,1,flipdot Dev,cpx11,1.0,1,0.006,3.49,0.006,0.00714,0.19,2020-06-01,2020-06-30,False,True,False
+6155413,1,flipdot Dev,backup,1.0,,0.0012,,0.0012,0.0014279999999999998,0.19,2020-06-01,2020-06-30,True,False,False
+6152807,scalelite-molecule,flipdot Dev,cpx11,4.0,4,0.006,3.49,0.024,0.02856,0.19,2020-06-01,2020-06-30,False,True,False
+6151753,scalelite-molecule,flipdot Dev,cpx11,3.0,3,0.006,3.49,0.018000000000000002,0.02142,0.19,2020-06-01,2020-06-30,False,True,False
+6153026,test2mailserver,flipdot Dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-06-01,2020-06-30,False,True,False
+6153026,test2mailserver,flipdot Dev,backup,1.0,,0.0016,,0.0016,0.001904,0.19,2020-06-01,2020-06-30,True,False,False
+6077765,scalelite2,flipdot Dev,cx21,120.0,120,0.008,4.9,0.96,1.1423999999999999,0.19,2020-06-01,2020-06-30,False,True,False
+6143425,testtestmailserver,flipdot Dev,cx21,20.0,20,0.008,4.9,0.16,0.19039999999999999,0.19,2020-06-01,2020-06-30,False,True,False
+6143425,testtestmailserver,flipdot Dev,backup,1.0,,0.032,,0.032,0.038079999999999996,0.19,2020-06-01,2020-06-30,True,False,False
+6077764,scalelite1,flipdot Dev,cx21,120.0,120,0.008,4.9,0.96,1.1423999999999999,0.19,2020-06-01,2020-06-30,False,True,False
+6077763,scalelite3,flipdot Dev,cx21,120.0,120,0.008,4.9,0.96,1.1423999999999999,0.19,2020-06-01,2020-06-30,False,True,False
+6079947,scalelite-molecule,flipdot Dev,cpx11,113.0,113,0.006,3.49,0.678,0.80682,0.19,2020-06-01,2020-06-30,False,True,False
+6079728,scalelite-molecule,flipdot Dev,cpx11,1.0,1,0.006,3.49,0.006,0.00714,0.19,2020-06-01,2020-06-30,False,True,False
+6078760,,flipdot Dev,cx21,3.0,3,0.008,4.9,0.024,0.02856,0.19,2020-06-01,2020-06-30,False,True,False
+6068633,scalelite,flipdot Dev,cpx11,23.0,23,0.006,3.49,0.138,0.16422,0.19,2020-06-01,2020-06-30,False,True,False
+17266930,scalelite-from-night-session-with-derguteherzog,flipdot Dev,unknown,0.9412684155,,0.01,,0.009412684155,0.011201094144449999,0.19,2020-06-01,2020-06-30,False,False,False
+6077016,,flipdot Dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-06-01,2020-06-30,False,True,False
+6076918,,flipdot Dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-06-01,2020-06-30,False,True,False
+6076733,,flipdot Dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-06-01,2020-06-30,False,True,False
+6076414,,flipdot Dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-06-01,2020-06-30,False,True,False
+6076303,,flipdot Dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-06-01,2020-06-30,False,True,False
+6076149,,flipdot Dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-06-01,2020-06-30,False,True,False
+6075373,,flipdot Dev,cx21,2.0,2,0.008,4.9,0.016,0.019039999999999998,0.19,2020-06-01,2020-06-30,False,True,False
+6074502,,flipdot Dev,cx21,2.0,2,0.008,4.9,0.016,0.019039999999999998,0.19,2020-06-01,2020-06-30,False,True,False
+6069039,,flipdot Dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2020-06-01,2020-06-30,False,True,False
