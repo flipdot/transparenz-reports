@@ -1,0 +1,26 @@
+server_id,name,project,type,quantity,usage_hours,price,price_max,price_net,price_gross,vat,date_from,date_to,is_backup,is_server,is_ceph
+907649,gw-01.ffks.de,FFKS,cx31,1.0,744,8.9,8.9,8.9,10.324,0.16,2020-07-01,2020-07-31,False,True,False
+907650,gw-17.ffks.de,FFKS,cx31,1.0,744,8.9,8.9,8.9,10.324,0.16,2020-07-01,2020-07-31,False,True,False
+2014216,flipdot-datenschutz-1,flipdot Vorstand,cx21,1.0,744,4.9,4.9,4.9,5.684,0.16,2020-07-01,2020-07-31,False,True,True
+2014216,flipdot-datenschutz-1,flipdot Vorstand,backup,1.0,,0.98,,0.98,1.1367999999999998,0.16,2020-07-01,2020-07-31,True,False,False
+3747984,ansible-managed-01,flipdot Member,cx11,1.0,744,2.49,2.49,2.49,2.8884,0.16,2020-07-01,2020-07-31,False,True,False
+5969718,minecraft-gen2,flipdot Minecraft,cx21,1.0,744,4.9,4.9,4.9,5.684,0.16,2020-07-01,2020-07-31,False,True,False
+5967525,testmailserver,flipdot Dev,cx21,1.0,744,4.9,4.9,4.9,5.684,0.16,2020-07-01,2020-07-31,False,True,False
+5967525,testmailserver,flipdot Dev,backup,1.0,,0.98,,0.98,1.1367999999999998,0.16,2020-07-01,2020-07-31,True,False,False
+6869851,swarm-manager-test-1,flipdot Dev,cx21,140.0,140,0.008,4.9,1.12,1.2992000000000001,0.16,2020-07-01,2020-07-31,False,True,False
+6869500,swarm-worker-test-1,flipdot Dev,cx21,2.0,2,0.008,4.9,0.016,0.01856,0.16,2020-07-01,2020-07-31,False,True,False
+6869852,swarm-worker-test-1,flipdot Dev,cx21,140.0,140,0.008,4.9,1.12,1.2992000000000001,0.16,2020-07-01,2020-07-31,False,True,False
+6869450,swarm-manager-test-1,flipdot Dev,cx21,2.0,2,0.008,4.9,0.016,0.01856,0.16,2020-07-01,2020-07-31,False,True,False
+6869177,swarm-manager-test-1,flipdot Dev,cx21,1.0,1,0.008,4.9,0.008,0.00928,0.16,2020-07-01,2020-07-31,False,True,False
+6868613,swarm-worker-test,flipdot Dev,cx21,3.0,3,0.008,4.9,0.024,0.02784,0.16,2020-07-01,2020-07-31,False,True,False
+6869334,swarm-manager-test-1,flipdot Dev,cx21,1.0,1,0.008,4.9,0.008,0.00928,0.16,2020-07-01,2020-07-31,False,True,False
+6869179,swarm-manager-test-3,flipdot Dev,cx21,1.0,1,0.008,4.9,0.008,0.00928,0.16,2020-07-01,2020-07-31,False,True,False
+6869178,swarm-manager-test-2,flipdot Dev,cx21,1.0,1,0.008,4.9,0.008,0.00928,0.16,2020-07-01,2020-07-31,False,True,False
+6868850,swarm-manager-test-3,flipdot Dev,cx21,1.0,1,0.008,4.9,0.008,0.00928,0.16,2020-07-01,2020-07-31,False,True,False
+6868846,swarm-manager-test-2,flipdot Dev,cx21,1.0,1,0.008,4.9,0.008,0.00928,0.16,2020-07-01,2020-07-31,False,True,False
+6868841,swarm-manager-test-1,flipdot Dev,cx21,1.0,1,0.008,4.9,0.008,0.00928,0.16,2020-07-01,2020-07-31,False,True,False
+6868601,swarm-manager-test,flipdot Dev,cx21,2.0,2,0.008,4.9,0.016,0.01856,0.16,2020-07-01,2020-07-31,False,True,False
+6868601,swarm-manager-test,flipdot Dev,backup,1.0,,0.0032,,0.0032,0.003712,0.16,2020-07-01,2020-07-31,True,False,False
+17544309,bbbinstallshtest-1591563235,flipdot Dev,unknown,3.3524397949,,0.01,,0.033524397949,0.03888830162084,0.16,2020-07-01,2020-07-31,False,False,False
+17266930,scalelite-from-night-session-with-derguteherzog,flipdot Dev,unknown,0.9709359014,,0.01,,0.009709359014,0.011262856456239999,0.16,2020-07-01,2020-07-31,False,False,False
+
