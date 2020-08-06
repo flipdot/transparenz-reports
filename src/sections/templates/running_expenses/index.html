@@ -6,11 +6,11 @@
             <h1>Laufende Kosten</h1>
             <ul class="nav nav-tabs" id="graph-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="{{ url_for('running_expenses.category_data', category='total') }}">Gesamt</a>
+                    <a class="nav-link active" data-url="{{ url_for('running_expenses.category_data', category='total') }}">Gesamt</a>
                 </li>
                 {% for k, v in categories.items() %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('running_expenses.category_data', category=k) }}">{{ v }}</a>
+                        <a class="nav-link" data-url="{{ url_for('running_expenses.category_data', category=k) }}">{{ v }}</a>
                     </li>
                 {% endfor %}
             </ul>

@@ -19,11 +19,10 @@ for (let navLink of navLinks) {
             n.classList.remove("active")
         }
         e.target.classList.add("active")
-        fetch(e.target.href)
+        fetch(e.target.dataset.url)
             .then(res => res.json())
             .then(json => Plotly.react(graphDiv, json, layout))
             .then(() => graphDiv.style.opacity = "1")
-        e.preventDefault()
     }
 }
 
