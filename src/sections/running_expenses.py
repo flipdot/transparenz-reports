@@ -45,7 +45,7 @@ def category_data(category):
 def get_costs_hcloud():
     path = Path('data/running_expenses/hcloud/')
     projects = {}
-    for csv_path in sorted(path.glob('*.csv')):
+    for csv_path in sorted(path.glob('????-??-??.csv')):
         data = pd.read_csv(csv_path)
         for name, group in data.groupby('project'):
             if name not in projects:
