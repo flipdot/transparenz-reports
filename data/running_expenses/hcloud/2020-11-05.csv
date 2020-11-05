@@ -1,0 +1,15 @@
+server_id,name,project,type,quantity,usage_hours,price,price_max,price_net,price_gross,vat,date_from,date_to,is_backup,is_server,is_ceph
+907650,gw-17.ffks.de,FFKS,cx31,1.0,744,8.9,8.9,8.9,10.324,0.16,2020-10-01,2020-10-31,False,True,False
+907649,gw-01.ffks.de,FFKS,cx31,1.0,744,8.9,8.9,8.9,10.324,0.16,2020-10-01,2020-10-31,False,True,False
+2014216,flipdot-datenschutz-1,flipdot Vorstand,cx21,1.0,744,4.9,4.9,4.9,5.684,0.16,2020-10-01,2020-10-31,False,True,True
+2014216,flipdot-datenschutz-1,flipdot Vorstand,backup,1.0,,0.98,,0.98,1.1367999999999998,0.16,2020-10-01,2020-10-31,True,False,False
+3747984,ansible-managed-01,flipdot Member,cx11,1.0,744,2.49,2.49,2.49,2.8884,0.16,2020-10-01,2020-10-31,False,True,False
+5969718,minecraft-gen2,flipdot Minecraft,cx21,1.0,744,4.9,4.9,4.9,5.684,0.16,2020-10-01,2020-10-31,False,True,False
+5967525,testmailserver,flipdot Dev,cx21,1.0,744,4.9,4.9,4.9,5.684,0.16,2020-10-01,2020-10-31,False,True,False
+5967525,testmailserver,flipdot Dev,backup,1.0,,0.98,,0.98,1.1367999999999998,0.16,2020-10-01,2020-10-31,True,False,False
+7879956,docker-test,flipdot Dev,cx11,1.0,679,2.49,2.49,2.49,2.8884,0.16,2020-10-01,2020-10-31,False,True,False
+7333605,test-backupserver,flipdot Dev,cx11,1.0,744,2.49,2.49,2.49,2.8884,0.16,2020-10-01,2020-10-31,False,True,True
+6869851,swarm-manager-test-1,flipdot Dev,cx21,66.0,66,0.008,4.9,0.528,0.61248,0.16,2020-10-01,2020-10-31,False,True,False
+6869852,swarm-worker-test-1,flipdot Dev,cx21,66.0,66,0.008,4.9,0.528,0.61248,0.16,2020-10-01,2020-10-31,False,True,False
+17544309,bbbinstallshtest-1591563235,flipdot Dev,unknown,3.3524397949,,0.01,,0.033524397949,0.03888830162084,0.16,2020-10-01,2020-10-31,False,False,False
+17266930,scalelite-from-night-session-with-derguteherzog,flipdot Dev,unknown,0.9709359014,,0.01,,0.009709359014,0.011262856456239999,0.16,2020-10-01,2020-10-31,False,False,False
