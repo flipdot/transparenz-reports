@@ -1,0 +1,26 @@
+server_id,name,project,type,quantity,usage_hours,price,price_max,price_net,price_gross,vat,date_from,date_to,is_backup,is_server,is_ceph
+907649,gw-01.ffks.de,FFKS,cx31,1.0,720,8.9,8.9,8.9,10.591,0.19,2021-04-01,2021-04-30,False,True,False
+907650,gw-17.ffks.de,FFKS,cx31,1.0,720,8.9,8.9,8.9,10.591,0.19,2021-04-01,2021-04-30,False,True,False
+11121427,prod-matrixserver,flipdot prod,cx21,433.0,433,0.008,4.9,3.464,4.12216,0.19,2021-04-01,2021-04-30,False,True,False
+11476273,prod-matrixserver,flipdot prod,cx21,170.0,170,0.008,4.9,1.36,1.6184,0.19,2021-04-01,2021-04-30,False,True,False
+10428337,prod-mailserver,flipdot prod,cx21,1.0,720,4.9,4.9,4.9,5.831,0.19,2021-04-01,2021-04-30,False,True,False
+2014216,flipdot-datenschutz-1,flipdot prod,cx21,1.0,720,4.9,4.9,4.9,5.831,0.19,2021-04-01,2021-04-30,False,True,True
+2014216,flipdot-datenschutz-1,flipdot prod,backup,1.0,,0.98,,0.98,1.1662,0.19,2021-04-01,2021-04-30,True,False,False
+9841818,prod_mailcow_userdata,flipdot prod,unknown,25.0,,0.04,,1.0,1.19,0.19,2021-04-01,2021-04-30,False,False,False
+10633381,prod-docker,flipdot prod,cx11,1.0,720,2.49,2.49,2.49,2.9631000000000003,0.19,2021-04-01,2021-04-30,False,True,False
+10737402,prod_forum_backup_intermediate,flipdot prod,unknown,22.5833333333,,0.04,,0.903333333332,1.0749666666650801,0.19,2021-04-01,2021-04-30,False,False,False
+10428148,prod-backupserver,flipdot prod,cx11,1.0,720,2.49,2.49,2.49,2.9631000000000003,0.19,2021-04-01,2021-04-30,False,True,True
+3747984,ansible-managed-01,flipdot Member,cx11,1.0,720,2.49,2.49,2.49,2.9631000000000003,0.19,2021-04-01,2021-04-30,False,True,False
+32060468,minecraft-gen2-17.02.2021_01:00,flipdot Minecraft,unknown,17.6304336523,,0.01,,0.17630433652299998,0.20980216046236996,0.19,2021-04-01,2021-04-30,False,False,False
+11476216,prod-matrixserver,flipdot Dev,cx21,1.0,1,0.008,4.9,0.008,0.009519999999999999,0.19,2021-04-01,2021-04-30,False,True,False
+11120742,test-matrixserver,flipdot Dev,cx21,436.0,436,0.008,4.9,3.488,4.15072,0.19,2021-04-01,2021-04-30,False,True,False
+32060702,test-mailserver-17.02.2021_01:16_to_save_money;standby,flipdot Dev,unknown,34.0988769824,,0.01,,0.340988769824,0.40577663609056,0.19,2021-04-01,2021-04-30,False,False,False
+11067253,test-workadventuremanual,flipdot Dev,cx11,1.0,1,0.004,2.49,0.004,0.0047599999999999995,0.19,2021-04-01,2021-04-30,False,True,False
+11067810,test-workadventuremanual,flipdot Dev,cx11,1.0,677,2.49,2.49,2.49,2.9631000000000003,0.19,2021-04-01,2021-04-30,False,True,False
+11476955,test-matrixserver,flipdot Dev,cx21,34.0,34,0.008,4.9,0.272,0.32368,0.19,2021-04-01,2021-04-30,False,True,False
+11494731,test-matrixserver,flipdot Dev,cx21,135.0,135,0.008,4.9,1.08,1.2852000000000001,0.19,2021-04-01,2021-04-30,False,True,False
+7879956,test-docker,flipdot Dev,cx11,310.0,310,0.004,2.49,1.24,1.4756,0.19,2021-04-01,2021-04-30,False,True,False
+7879956,test-docker,flipdot Dev,cx21,411.0,411,0.008,4.9,3.2880000000000003,3.91272,0.19,2021-04-01,2021-04-30,False,True,False
+11006280,test-matrixserver,flipdot Dev,cx21,117.0,117,0.008,4.9,0.936,1.11384,0.19,2021-04-01,2021-04-30,False,True,False
+10174462,test-matrixserver-manual,flipdot Dev,cx21,117.0,117,0.008,4.9,0.936,1.11384,0.19,2021-04-01,2021-04-30,False,True,False
+7333605,test-backupserver,flipdot Dev,cx11,1.0,720,2.49,2.49,2.49,2.9631000000000003,0.19,2021-04-01,2021-04-30,False,True,True
