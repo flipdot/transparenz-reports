@@ -23,7 +23,7 @@ jobs:
     - name: Run stylecheck
       run: pipenv run flake8 .
     - name: Run tests
-      run: GITHUB_REPOSITORY="" pipenv run nosetests --with-doctest .
+      run: GITHUB_REPOSITORY="" pipenv run nose2
 
   deploy:
     needs: build
