@@ -1,15 +1,14 @@
 name: CI
 
 on:
+  pull_request:
   push:
-    branches:
-      - master
+  release:
+    types: [published]
 
 jobs:
   build:
-
     runs-on: 'ubuntu-18.04'
-
     steps:
     - uses: actions/checkout@v1
     - name: Setup python
@@ -28,6 +27,7 @@ jobs:
 
   deploy:
     needs: build
+    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v1
