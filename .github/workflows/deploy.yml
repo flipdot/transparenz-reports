@@ -1,21 +1,20 @@
 name: CI
 
 on:
+  pull_request:
   push:
-    branches:
-      - master
+  release:
+    types: [published]
 
 jobs:
   build:
-
     runs-on: 'ubuntu-18.04'
-
     steps:
     - uses: actions/checkout@v1
     - name: Setup python
       uses: actions/setup-python@v1
       with:
-        python-version: '3.7'
+        python-version: '3.10'
         architecture: x64
     - name: Install pipenv
       run: pip install pipenv
@@ -24,17 +23,18 @@ jobs:
     - name: Run stylecheck
       run: pipenv run flake8 .
     - name: Run tests
-      run: GITHUB_REPOSITORY="" pipenv run nosetests --with-doctest .
+      run: GITHUB_REPOSITORY="" pipenv run nose2
 
   deploy:
     needs: build
+    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v1
     - name: Setup python
       uses: actions/setup-python@v1
       with:
-        python-version: '3.7'
+        python-version: '3.10'
         architecture: x64
     - name: Install pipenv
       run: pip install pipenv
