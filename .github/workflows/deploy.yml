@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: 'ubuntu-18.04'
+    runs-on: 'ubuntu-22.04'
     steps:
     - uses: actions/checkout@v1
     - name: Setup python
@@ -28,7 +28,7 @@ jobs:
   deploy:
     needs: build
     if: github.ref == 'refs/heads/master'
-    runs-on: ubuntu-18.04
+    runs-on: 'ubuntu-22.04'
     steps:
     - uses: actions/checkout@v1
     - name: Setup python
