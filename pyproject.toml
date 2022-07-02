@@ -9,11 +9,11 @@ python = "^3.8"
 Frozen-Flask = "^0.18"
 pandas = "^1.4.3"
 PyYAML = "^6.0"
-hetzner-fix-report = "^0.11.0"
+nose2 = "^0.11.0"
+flake8 = "^4.0.1"
 
 [tool.poetry.dev-dependencies]
-flake8 = "^4.0.1"
-nose2 = "^0.11.0"
+hetzner-fix-report = "^0.11.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

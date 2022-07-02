@@ -19,7 +19,7 @@ jobs:
     - name: Install Poetry
       uses: snok/install-poetry@v1
     - name: Install dependencies
-      run: poetry install
+      run: poetry install --no-dev
     - name: Run stylecheck
       run: poetry run flake8 .
     - name: Run tests
@@ -39,7 +39,7 @@ jobs:
     - name: Install Poetry
       uses: snok/install-poetry@v1
     - name: Install dependencies
-      run: poetry install
+      run: poetry install --no-dev
     - name: Build static version
       run: poetry run src/freeze.py
     - name: Deploy to GitHub Pages
