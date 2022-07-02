@@ -6,16 +6,16 @@ Visit http://transparenz.flipdot.org/
 
 Install dependencies:
 
-    $ pipenv sync
+    $ poetry install
 
-(You can install pipenv with `pip install pipenv`. More information on pipenv: https://pypi.org/project/pipenv/)
+More information on poetry: https://python-poetry.org/docs/#installation
 
 Run the interactive version if you are going to change some python code:
 
-    $ FLASK_DEBUG=1 pipenv run src/app.py
+    $ FLASK_DEBUG=1 poetry run src/app.py
     
 Or build the static version:
 
-    $ pipenv run src/freeze.py
+    $ poetry run src/freeze.py
     
 The static files are inside `./build/`
