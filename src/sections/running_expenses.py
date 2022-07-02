@@ -52,9 +52,9 @@ def get_costs_hcloud():
                 projects[name] = {'x': [], 'y': [], 'type': 'scatter', 'name': name, 'stackgroup': 'one'}
             p = projects[name]
             group = group.sort_values('date_to')
-            if not (group['date_to'].any() == group['date_to']).all():
-                raise ValueError('Some date_to are not equal')
-            p['x'].append(group['date_to'].any())
+            if n := len(group["date_to"].value_counts()) != 1:
+                raise ValueError(f"All date_to should be the same, but there are {n} different values")
+            p['x'].append(group['date_to'].iloc[0])
             p['y'].append(group['price_gross'].sum())
 
     return list(projects.values())
