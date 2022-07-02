@@ -9,6 +9,7 @@ python = "^3.8"
 Frozen-Flask = "^0.18"
 pandas = "^1.4.3"
 PyYAML = "^6.0"
+hetzner-fix-report = "^0.11.0"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^4.0.1"
