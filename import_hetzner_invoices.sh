@@ -10,8 +10,7 @@ fi;
 
 for csv_path in $1/Hetzner_*.csv; do
     timestamp=$(echo $csv_path | grep -Po "(?<=Hetzner_)\d{4}-\d{2}-\d{2}");
-    pdf_path="${csv_path::-3}pdf"
     echo "Converting $csv_path..."
-    poetry run hetzner-fix-report $csv_path $pdf_path -o "$OUTPUT_PATH/$timestamp.csv"
+    poetry run hetzner-fix-report $csv_path -o "$OUTPUT_PATH/$timestamp.csv"
 done
 
