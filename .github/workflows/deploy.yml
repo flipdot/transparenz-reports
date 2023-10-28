@@ -24,6 +24,8 @@ jobs:
       run: poetry run flake8 .
     - name: Run tests
       run: GITHUB_REPOSITORY="" poetry run nose2
+    - name: Build static version
+      run: poetry run src/freeze.py
 
   deploy:
     needs: build
@@ -40,7 +42,7 @@ jobs:
       uses: snok/install-poetry@v1
     - name: Install dependencies
       run: poetry install --no-dev
-    - name: Build static version
+    - name: Build static version # TODO: should not be run here again but be passed from the build job
       run: poetry run src/freeze.py
     - name: Deploy to GitHub Pages
       env:
