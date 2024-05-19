@@ -5,9 +5,9 @@ description = ""
 authors = ["Soeren Wegener <soerface@flipdot.org>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.11"
 Frozen-Flask = "^1.0.0"
-pandas = "^1.4.3"
+pandas = "^2.2"
 PyYAML = "^6.0"
 nose2 = "^0.11.0"
 flake8 = "^4.0.1"
