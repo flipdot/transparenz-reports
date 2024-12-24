@@ -1,0 +1,15 @@
+#mainContent {
+    margin-top: 1rem;
+}
+
+.costBar {
+    background-color: #0063ff30;
+    position: absolute;
+    height: 1.5rem;
+    z-index: -1;
+    margin: 0 -0.2rem;
+}
+
+.currency {
+    font-family: 'Cascadia Code', Consolas, 'Helvetica Monospaced', monospace;
+}
