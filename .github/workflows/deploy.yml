@@ -1,5 +1,7 @@
 name: CI
 
+permissions: {}
+
 on:
   pull_request:
   push:
@@ -31,6 +33,8 @@ jobs:
     needs: build
     if: github.ref == 'refs/heads/master'
     runs-on: 'ubuntu-22.04'
+    permissions:
+      contents: write
     steps:
     - uses: actions/checkout@v1
     - name: Setup python
