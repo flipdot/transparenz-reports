@@ -3,6 +3,7 @@ name = "transparenz-reports"
 version = "0.1.0"
 description = ""
 authors = ["Soeren Wegener <soerface@flipdot.org>"]
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -14,7 +15,7 @@ flake8 = "^4.0.1"
 # Set to ^1.0 once https://github.com/flxai/hetzner-fix-report/pull/6 was merged
 hetzner-fix-report = {git = "https://github.com/flxai/hetzner-fix-report", rev = "e208934ac8ee3a1684ccedd56c85ecd050036792"}
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 hetzner-fix-report = "^0.11.0"
 
 [build-system]
