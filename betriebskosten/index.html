@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>fd Transparenzberichte</title>
+    <link rel="stylesheet" href="/static/css/bootstrap-4.3.1.min.css"/>
+    <link rel="stylesheet" href="/static/css/global.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+<link rel="apple-touch-icon" sizes="57x57" href="/static/img/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/static/img/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/static/img/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/static/img/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/static/img/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/static/img/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/static/img/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/static/img/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/static/img/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/static/img/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon/favicon-16x16.png">
+<meta name="msapplication-TileImage" content="/static/img/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    
+    
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/">flipdot</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                aria-controls="#navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto">
+                
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/events/">Events</a></li>
+                
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/projekte/">Projekte</a></li>
+                
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/betriebskosten/">Laufende Kosten</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container" id="mainContent">
+    
+    <div class="row">
+        <div class="col">
+            <h1>Laufende Kosten</h1>
+            <ul class="nav nav-tabs" id="graph-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" data-url="/betriebskosten/data/total.json">Gesamt</a>
+                </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link" data-url="/betriebskosten/data/hcloud.json">Server</a>
+                    </li>
+                
+            </ul>
+            <div id="expensesGraph"></div>
+        </div>
+    </div>
+
+    <hr>
+<div class="row" id="pageFooter">
+    <div class="col">
+        Seite generiert am: Fri Jan  9 07:58:01 2026
+    </div>
+</div>
+</div>
+
+<script src="/static/js/jquery-3.4.1.min.js"></script>
+<script src="/static/js/bootstrap-4.3.1.bundle.min.js"></script>
+
+
+    <script src="/static/js/plotly-latest.min.js"></script>
+    <script src="/static/js/expenses_graph.js"></script>
+
+</body>
+</html>
