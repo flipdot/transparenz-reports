@@ -40,7 +40,7 @@ def index():
 def event(year, event_name):
     if not re.fullmatch(r'\d{4}', year) or not re.fullmatch(r'[\w-]+', event_name):
         abort(404)
-    event_files = {p.name: p for p in (Path('data/events') / int(year)).glob('*.yml')}
+    event_files = {p.name: p for p in (Path('data/events') / str(int(year))).glob('*.yml')}
     target = event_files.get(f'{event_name}.yml')
     if target is None:
         abort(404)
