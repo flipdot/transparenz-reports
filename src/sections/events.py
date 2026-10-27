@@ -1,7 +1,7 @@
 import re
 from typing import List, Dict, Union
 
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, abort
 from pathlib import Path
 import yaml
 
@@ -38,6 +38,8 @@ def index():
 
 @bp.route('/<string:year>/<string:event_name>/')
 def event(year, event_name):
+    if not re.fullmatch(r'\d{4}', year) or not re.fullmatch(r'[\w-]+', event_name):
+        abort(404)
     with open(Path('data/events') / year / f'{event_name}.yml') as f:
         event_data = yaml.safe_load(f)
     expenditures = create_cost_table(event_data['expenditures'])
