@@ -40,7 +40,11 @@ def index():
 def event(year, event_name):
     if not re.fullmatch(r'\d{4}', year) or not re.fullmatch(r'[\w-]+', event_name):
         abort(404)
-    with open(Path('data/events') / year / f'{event_name}.yml') as f:
+    event_files = {p.name: p for p in (Path('data/events') / str(int(year))).glob('*.yml')}
+    target = event_files.get(f'{event_name}.yml')
+    if target is None:
+        abort(404)
+    with open(target) as f:
         event_data = yaml.safe_load(f)
     expenditures = create_cost_table(event_data['expenditures'])
     revenues = create_cost_table(event_data['revenues'])
